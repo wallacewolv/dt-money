@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import Modal from 'react-modal'
 import logoImg from '../../assets/logo.svg'
 
 import { Container, Content } from './styles'
@@ -16,8 +14,6 @@ return (
         <button type="button" onClick={onOpenNewTransactionModal}>
           Nova transação
         </button>
-
-        
       </Content>
     </Container>
   );
