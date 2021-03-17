@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     --text-body: #969CB3;
 
     --background: #F0F2F5;
+    --input-background: #e7e9ee;
     --shape: #FFFFFF;
   }
 
@@ -77,6 +78,20 @@ export const GlobalStyle = createGlobalStyle`
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;
+  }
+
+  .react-modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border: 0;
+    background: transparent;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
   // Fim da estilização global do modal
 `
