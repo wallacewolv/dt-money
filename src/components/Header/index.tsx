@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 
 export function Header({ onOpenNewTransactionModal }: HeaderProps) {
-return (
+  return (
     <Container>
       <Content>
         <img src={logoImg} alt="dtmoney" />
