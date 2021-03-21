@@ -3,6 +3,7 @@ import { useTransactions } from '../../hooks/useTransactions';
 import incomeImg from '../../assets/income.svg'
 import outcomeImg from '../../assets/outcome.svg'
 import totalImg from '../../assets/total.svg'
+import background from '../../assets/wallet.svg'
 
 import { Container } from "./styles";
 
@@ -45,7 +46,13 @@ export function Summary() {
         }}
       </TransactionsContext.Consumer>
        */}
-      <div>
+      <div 
+        style={{ 
+          backgroundImage: `url(${background})`, 
+          backgroundSize: 'cover', 
+          width: '100%',
+        }}
+      >
         <header>
           <p>Entradas</p>
           <img src={incomeImg} alt="Entradas" />
@@ -57,7 +64,13 @@ export function Summary() {
           }).format(summary.deposits)}
         </strong>
       </div>
-      <div>
+      <div 
+        style={{ 
+          backgroundImage: `url(${background})`, 
+          backgroundSize: 'cover', 
+          width: '100%' 
+          }}
+      >
         <header>
           <p>Saídas</p>
           <img src={outcomeImg} alt="Entradas" />
@@ -70,7 +83,14 @@ export function Summary() {
           }).format(summary.withdraws)}
         </strong>
       </div>
-      <div className="highlight-background">
+      <div 
+        className="highlight-background"
+        style={{ 
+          backgroundImage: `url(${background})`, 
+          backgroundSize: 'cover', 
+          width: '100%' 
+        }}
+      >
         <header>
           <p>Total</p>
           <img src={totalImg} alt="Entradas" />

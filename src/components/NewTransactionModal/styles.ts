@@ -3,7 +3,7 @@ import { darken, transparentize } from 'polished';
 
 export const Container = styled.form`
   h2{
-    color: var(--text-title);
+    color: #FFF;
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -20,7 +20,8 @@ export const Container = styled.form`
     font-size: 1rem;
 
     &::placeholder {
-      color: var(--text-body);
+      color: var(--text-table);
+      font-weight: 500;
     }
 
     // Todo input que tiver um antes
@@ -95,6 +96,6 @@ export const RadioBox = styled.button<RadioBoxProps>`
     display: inline-block;
     margin-left: 1rem;
     font-size: 1rem;
-    color: var(--text-title);
+    color: #FFF;
   }
 `;

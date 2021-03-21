@@ -1,5 +1,7 @@
 import { useTransactions } from "../../hooks/useTransactions";
 
+import personaImg from '../../assets/persona.svg'
+
 import { Container } from "./styles";
 
 export function TransactionsTable() {
@@ -37,6 +39,10 @@ export function TransactionsTable() {
           ))}
         </tbody>
       </table>
+      <div>
+        <img src={personaImg} alt="Entradas" />
+        <p>Seu app de controle financeiro</p>
+      </div>
     </Container>
   );
 }

@@ -16,6 +16,10 @@ export const Container = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      img {
+        margin-right: -1.2rem;
+      }
     }
 
     strong {
@@ -24,6 +28,7 @@ export const Container = styled.div`
       font-size: 2rem;
       font-weight: 500;
       line-height: 3rem;
+      color: #FFF;
     }
 
     &.highlight-background {

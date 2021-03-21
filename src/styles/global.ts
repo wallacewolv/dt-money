@@ -4,16 +4,19 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --red: #E52E4D;
     --green: #33CC95;
-    --blue: #5429CC;
+    --blue: #00467Fcc;
 
-    --blue-light: #6933FF;
+    --blue-light: #0008;
 
     --text-title: #363F5F;
-    --text-body: #969CB3;
+    --text-body: #908CB3;
+    --text-table: #0008;
 
-    --background: #F0F2F5;
+    --background: linear-gradient(to right, #2b4876, #3e8476cc);
     --input-background: #e7e9ee;
     --shape: #FFFFFF;
+    --shape-table: #DCDCDC;
+  
   }
 
   * {
